@@ -97,7 +97,7 @@
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/navigation-night-v1', 
       // YOUR TURN: choose a style: mapbox://styles/mapbox/navigation-night-v11
-      center: [144.946457, -37.840935], // starting position [lng, lat]
+      center: [-122.411, 37.785], // starting position [lng, lat]
       zoom: 10,// starting zoom
       transformRequest: transformRequest
     });
@@ -106,7 +106,7 @@
       $.ajax({
         type: "GET",
         //YOUR TURN: Replace with csv export link
-        url: 'https://docs.google.com/spreadsheets/d/1gC4crCVFvdUea61iLfo7H3Q5aX4f6MLqgwxTh1MI7ks/edit?usp=sharing',
+        url: 'https://docs.google.com/spreadsheets/d/1mcwWMGn4kphHssFfxCd8E04xutGxl8vI6O6ZsXu_mAg/edit?usp=sharing',
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
       });
