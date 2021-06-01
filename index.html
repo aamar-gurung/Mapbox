@@ -97,7 +97,7 @@
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/navigation-night-v1', 
       // YOUR TURN: choose a style: mapbox://styles/mapbox/navigation-night-v11
-      center: [-122.411, 37.785], // starting position [lng, lat]
+      center: [-37.840935, 144.946457], // starting position [lng, lat]
       zoom: 10,// starting zoom
       transformRequest: transformRequest
     });
@@ -106,13 +106,17 @@
       $.ajax({
         type: "GET",
         //YOUR TURN: Replace with csv export link
-        url: 'https://docs.google.com/spreadsheets/d/1MiqwGe_7m6B0xFQfaS3GGRO8CmGm5xlXPICDPEeGHyo/gviz/tq?tqx=out:csv&sheet=Sheet1',
+        url: 'https://docs.google.com/spreadsheets/d/1mcwWMGn4kphHssFfxCd8E04xutGxl8vI6O6ZsXu_mAg/',
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
       });
 
+//MELBOURNE
+//https://docs.google.com/spreadsheets/d/1mcwWMGn4kphHssFfxCd8E04xutGxl8vI6O6ZsXu_mAg/
 
-
+// san francisco 
+//https://docs.google.com/spreadsheets/d/1MiqwGe_7m6B0xFQfaS3GGRO8CmGm5xlXPICDPEeGHyo/gviz/tq?tqx=out:csv&sheet=Sheet1
+//-122.411, 37.785
       function makeGeoJSON(csvData) {
         csv2geojson.csv2geojson(csvData, {
           latfield: 'Latitude',
