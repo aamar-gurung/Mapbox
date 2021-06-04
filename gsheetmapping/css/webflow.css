@@ -375,7 +375,7 @@ textarea.w-select {
   background-color: #f3f3f3;
 }
 .w-select[multiple] {
-  height: auto;
+  height: 160px;
 }
 .w-form-label {
   display: inline-block;

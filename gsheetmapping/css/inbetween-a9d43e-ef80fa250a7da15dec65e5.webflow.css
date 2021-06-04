@@ -1,21 +1,23 @@
 .heading {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .navbar {
   display: block;
   margin-top: 5px;
-  background-color: #fff;
+  background-color: rgb(65, 63, 63);
 }
 
 .heading-2 {
   margin-top: 10px;
-  font-family: 'IBM Plex Mono', sans-serif;
+  text-align: justify;
+  font-family: 'Helvetica ', sans-serif;
+  color: rgb(23, 110, 192);
 }
 
 .nav-link {
   margin-top: 0px;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .nav-link.w--current {
@@ -24,12 +26,12 @@
 
 .nav-link-2 {
   margin-top: 5px;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .nav-link-3 {
   margin-top: 5px;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .dropdown-toggle {
@@ -46,7 +48,7 @@
 }
 
 .dropdown-toggle.w--open {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .icon {
@@ -58,19 +60,19 @@
 }
 
 .dropdown-link.w--current {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .dropdown-link-2 {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .dropdown-link-3 {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .dropdown-link-4 {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .section {
@@ -82,7 +84,7 @@
 .text-block {
   margin-right: 90px;
   margin-left: 49px;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   color: #fff;
 }
 
@@ -93,7 +95,7 @@
 
 .paragraph {
   margin: 19px 10px 41px;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-size: 18px;
 }
 
@@ -106,7 +108,7 @@
 .heading-3 {
   margin-right: 70px;
   margin-left: 406px;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   color: #fff;
   line-height: 45px;
   text-align: right;
@@ -121,7 +123,7 @@
   margin-right: 20px;
   margin-left: 20px;
   padding-bottom: 79px;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-size: 20px;
 }
 
@@ -130,12 +132,12 @@
 }
 
 .text-block-2 {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   text-align: center;
 }
 
 .heading-5 {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   text-align: center;
 }
 
@@ -147,7 +149,7 @@
 }
 
 .text-block-3 {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   text-align: center;
 }
 
@@ -202,16 +204,16 @@
   -ms-flex-align: center;
   align-items: center;
   background-color: #000;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   text-align: center;
 }
 
 .nav-menu {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .html-embed {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .dropdown-toggle-2 {
@@ -222,7 +224,7 @@
   margin-top: 10px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0)), to(hsla(0, 0%, 100%, 0)));
   background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0));
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .container {
@@ -259,7 +261,7 @@
   margin-right: 30px;
   margin-bottom: 10px;
   background-color: #000;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   color: #fff;
   font-weight: 700;
   white-space: normal;
@@ -267,7 +269,7 @@
 
 .text-block-9 {
   margin-top: 4px;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .bold-text-2 {
@@ -320,54 +322,54 @@
 .columns {
   width: 50%;
   height: 100%;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .form-2 {
   display: block;
   width: 100%;
-  margin-top: 1px;
+  margin-top: 20px;
   margin-right: 0px;
   margin-left: 0px;
   padding-top: 0px;
 }
 
 .field-label {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .select-field {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .field-label-2 {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .field-label-3 {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .submit-button-2 {
-  background-color: #000;
-  font-family: 'IBM Plex Mono', sans-serif;
+  background-color: rgb(23, 110, 192);
+  font-family: 'Helvetica', sans-serif;
   font-weight: 700;
 }
 
 .name {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .text-field {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .field-label-4 {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .field-label-5 {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .form-block-2 {
@@ -472,7 +474,7 @@
 }
 
 .text-field-2 {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .container-4 {

@@ -1,9 +1,10 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Tue Jun 01 2021 09:26:10 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="60b5f745606751c3c4b399e8" data-wf-site="60b5f745606751b24db399e5">
+  <body style="background-color:rgb(26, 25, 25);"></body>
 <head>
   <meta charset="utf-8">
-  <title>Route Mapping</title>
+  <title>Melbourne Urban AI</title>
   <meta content="Route Mapping" property="og:title">
   <meta content="Route Mapping" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -19,6 +20,54 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body">
+  <div>
+    <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
+      <div class="w-container">
+        <a href="#" class="w-nav-brand">
+          <h1 class="heading-2">MELBOURNE URBAN AI</h1>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="w-row">
+    <div class="column-2 w-col w-col-2 w-col-medium-6">
+      <div class="form-block-2 w-form">
+        <form id="email-form-3" name="email-form-3" data-name="Email Form 3" method="post" action="https://script.google.com/macros/s/AKfycbytJfrbeMt4_YzvsVarjguOcqttU147CcoE5nUktPy0fXmzrUaaCBQvzmhWCTg-YeLlkg/exec" happiness="happiness" class="form-2"><label for="Street adress" class="field-label-5">STREET ADDRESS</label><input type="text" class="name w-input" maxlength="256" name="Name" data-name="Name" placeholder="Example Text" id="Street adress" required=""><label for="Space use" class="field-label">SPACE USE</label><select id="Space use" name="Space use" data-name="Space use" required="" class="select-field w-select">
+            <option value="Public Transport">Public Transport</option>
+            <option value="green area">Green area</option>
+            <option value="Primary Education">Primary Education</option>
+            <option value="Higher Education">Higher Education</option>
+            <option value="Hospital">Hospital</option>
+            <option value="Pharmacy">Pharmacy</option>
+            <option value="Spec Healtcare">Spec Healtcare</option>
+            <option value="Food">Food</option>
+            <option value="Tourism">Tourism</option>
+            <option value="Night life">Night life</option>
+            <option value="Sports Facility">Sports Facility</option>
+            <option value="Place of Worship">Place of Worship</option>
+            <option value="BBQ Area">BBQ Area</option>
+            <option value="entertainment">Entertainment</option>
+          </select><label for="Floors" class="field-label-2">FLOORS</label><select id="Floors" name="Floors" data-name="Floors" required="" class="select-field w-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select><label for="Block ID" class="field-label-4">BLOCK ID</label><input type="text" class="text-field w-input" maxlength="256" name="Block ID" data-name="Block ID" placeholder="Example Text" id="Block ID"><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button"></form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+    </div>
+    <div class="column-3 w-col w-col-10 w-col-medium-6">
   <div class="html-embed-5 w-embed w-script">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
@@ -49,10 +98,12 @@ display: none;
     mapboxgl.accessToken = 'pk.eyJ1IjoibW90YXkzNCIsImEiOiJja29qYTl1dmsxM2ttMm9wbmR1MGx6cGYwIn0.z0wDjYyri3CmReax8aak0A'; //Mapbox token 
     var map = new mapboxgl.Map({
       container: 'map', // container id
-      style: 'mapbox://styles/mapbox/navigation-night-v1', 
+      style: 'mapbox://styles/mapbox/dark-v10', 
       // YOUR TURN: choose a style: mapbox://styles/mapbox/navigation-night-v11
       center: [144.946457, -37.840935], // starting position [lng, lat]
       zoom: 12,// starting zoom
+      maxZoom: 15,
+      minZoom: 8
 });
 var canvas = map.getCanvasContainer();
 var geojson = {
@@ -271,7 +322,7 @@ map.once('touchend', onUp);
     </body>
   </div>
   <div class="form-block-2 w-form">
-    <form id="email-form-3" name="email-form-3" data-name="Email Form 3" method="post" action="https://script.google.com/macros/s/AKfycbyNAp0bSy3uBlmnsZmMoKDVkpEzLgbG3Rw3K6NL12QPqV1DcsC53cjmiTjkDKrbqlGhIw/exec" happiness="happiness" class="form-2"><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button"></form>
+    <form id="email-form-3" name="email-form-3" data-name="Email Form 3" method="post" action="https://script.google.com/macros/s/AKfycbytJfrbeMt4_YzvsVarjguOcqttU147CcoE5nUktPy0fXmzrUaaCBQvzmhWCTg-YeLlkg/exec" happiness="happiness" class="form-2"><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button"></form>
     <div class="w-form-done">
       <div>Thank you! Your submission has been received!</div>
     </div>
