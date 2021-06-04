@@ -32,7 +32,7 @@
   <div class="w-row">
     <div class="column-2 w-col w-col-2 w-col-medium-6">
       <div class="form-block-2 w-form">
-        <form id="email-form-3" name="email-form-3" data-name="Email Form 3" method="post" action="https://script.google.com/macros/s/AKfycbytJfrbeMt4_YzvsVarjguOcqttU147CcoE5nUktPy0fXmzrUaaCBQvzmhWCTg-YeLlkg/exec" happiness="happiness" class="form-2"><label for="Street address" class="field-label-5">STREET ADDRESS</label><input type="text" class="name w-input" maxlength="256" name="Street address" data-name="Street address" placeholder="Example Text" id="Street adress" required=""><label for="Space use" class="field-label">SPACE USE</label><select id="Space use" name="Space use" data-name="Space use" required="" class="select-field w-select">
+        <form id="email-form-3" name="email-form-3" data-name="Email Form 3" method="post" action="https://script.google.com/macros/s/AKfycbytJfrbeMt4_YzvsVarjguOcqttU147CcoE5nUktPy0fXmzrUaaCBQvzmhWCTg-YeLlkg/exec" happiness="happiness" class="form-2"><label for="Street adress" class="field-label-5">STREET ADDRESS</label><input type="text" class="name w-input" maxlength="256" name="Street address" data-name="Street address" placeholder="Example Text" id="Street adress" required=""><label for="Space use" class="field-label">SPACE USE</label><select id="Space use" name="Space use" data-name="Space use" required="" class="select-field w-select">
             <option value="Public Transport">Public Transport</option>
             <option value="green area">Green area</option>
             <option value="Primary Education">Primary Education</option>
@@ -165,7 +165,7 @@ map.setPaintProperty('point', 'circle-color', '#3887be');
 canvas.style.cursor = '';
 });
 map.on('mousedown', 'point', function (e) {
-// Prevent the default map drag behavior.
+// Prevent the default map drag behavior. 
 e.preventDefault();
 canvas.style.cursor = 'grab';
 map.on('mousemove', onMove);
@@ -173,7 +173,7 @@ map.once('mouseup', onUp);
 });
 map.on('touchstart', 'point', function (e) {
 if (e.points.length !== 1) return;
-// Prevent the default map drag behavior.
+// Prevent the default map drag behavior. Lattitude
 e.preventDefault();
 map.on('touchmove', onMove);
 map.once('touchend', onUp);
@@ -206,8 +206,8 @@ map.once('touchend', onUp);
     var formData = {};
     console.log(geojson);
     console.log(geojson['features']);
-    formData["Lattitude"] = geojson['features'][0]['geometry']['coordinates'][0];
-    formData["Longitude"] = geojson['features'][0]['geometry']['coordinates'][1];
+    formData["Longitude"] = geojson['features'][0]['geometry']['coordinates'][0];
+    formData["Latitude"] = geojson['features'][0]['geometry']['coordinates'][1];
    	formData["IP"] = ip;
     formData["Node index"] = "ReplaceMeNodeIndex";
     fields.forEach(function(name){
