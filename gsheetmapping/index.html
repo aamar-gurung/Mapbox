@@ -116,10 +116,12 @@
   <div class="w-row">
     <div class="column-2 w-col w-col-2 w-col-medium-6">
       <div class="form-block-2 w-form">
-        <form id="email-form-3" name="email-form-3" data-name="Email Form 3" method="post" action="https://script.google.com/macros/s/AKfycbytJfrbeMt4_YzvsVarjguOcqttU147CcoE5nUktPy0fXmzrUaaCBQvzmhWCTg-YeLlkg/exec" happiness="happiness" class="form-2"><label for="Street adress" class="field-label-5">ADDRESS</label><input type="text" class="name w-input" maxlength="256" name="Address" data-name="Address" placeholder="Example Text" id="Address" required=""><label for="Use" class="field-label">USE</label><select id="Use" name="Use" data-name="Use" required="" class="select-field w-select">
-            <option value="Public Transport">Public Transport</option>
+        <form id="email-form-3" name="email-form-3" data-name="Email Form 3" method="post" action="https://script.google.com/macros/s/AKfycbytJfrbeMt4_YzvsVarjguOcqttU147CcoE5nUktPy0fXmzrUaaCBQvzmhWCTg-YeLlkg/exec" happiness="happiness" class="form-2"><label for="Name" class="field-label-5">NAME</label><input type="text" class="name w-input" maxlength="256" name="Name" data-name="Name" placeholder="Example Text" id="Name" required=""><label for="amenity" class="field-label">AMENITY</label><select id="amenity" name="amenity" data-name="amenity" required="" class="select-field w-select">
+            <option value="Bus Stop">Bus Stop</option>
             <option value="green area">Green area</option>
             <option value="Primary Education">Primary Education</option>
+            <option value="Higher Education">Higher Education</option>
+            <option value="Shopping">Shopping</option>
             <option value="Higher Education">Higher Education</option>
             <option value="Hospital">Hospital</option>
             <option value="Pharmacy">Pharmacy</option>
@@ -130,19 +132,11 @@
             <option value="Sports Facility">Sports Facility</option>
             <option value="Place of Worship">Place of Worship</option>
             <option value="BBQ Area">BBQ Area</option>
-            <option value="entertainment">Entertainment</option>
-          </select><label for="Floors" class="field-label-2">FLOORS</label><select id="Floors" name="Floors" data-name="Floors" required="" class="select-field w-select">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select><label for="Block ID" class="field-label-4">BLOCK ID</label><input type="text" class="text-field w-input" maxlength="256" name="Block ID" data-name="Block ID" placeholder="Example Text" id="Block ID"><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button"></form>
+            <option value="Entertainment">Entertainment</option>
+          </select><label for="geometry" class="field-label-2">GEOMETRY</label><select id="geometry" name="geometry" data-name="geometry" required="" class="select-field w-select">
+            <option value="Point">point</option>
+            <option value="Polygon">polygon</option>
+          </select><label for="osmid" class="field-label-4">OSMID</label><input type="text" class="text-field w-input" maxlength="256" name="osmid" data-name="osmid" placeholder="Example Text" id="osmid"><input type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button"></form>
         <div class="w-form-done">
           <div>Thank you! Your submission has been received!</div>
         </div>
@@ -191,7 +185,7 @@ var transformRequest = (url, resourceType) => {
       };
     };
 
-// MAPBOX 
+// MAPBOX ///// old mapbox script editor url https://script.google.com/macros/s/AKfycbytJfrbeMt4_YzvsVarjguOcqttU147CcoE5nUktPy0fXmzrUaaCBQvzmhWCTg-YeLlkg/exec
 
 
     mapboxgl.accessToken = 'pk.eyJ1IjoibW90YXkzNCIsImEiOiJja29qYTl1dmsxM2ttMm9wbmR1MGx6cGYwIn0.z0wDjYyri3CmReax8aak0A'; //Mapbox token 
@@ -236,6 +230,8 @@ $(document).ready(function () {
 
             // ({'type':'geojson', 'data':data})
 
+            /* 
+            
             map.addSource('melbourne', {
               type: 'geojson',
               data: 'data',
@@ -244,7 +240,9 @@ $(document).ready(function () {
               clusterRadius: 25 // Radius of each cluster when clustering points (defaults to 50)
             });
 
-            /////
+            ///// 
+            
+            */
 
           
             //Add the the layer to the map
@@ -300,7 +298,8 @@ $(document).ready(function () {
             var bbox = turf.bbox(data);
             map.fitBounds(bbox, { padding: 50 });
 
-          
+          /*
+
             //MAPBOX CLUSTERS 
 
             map.addLayer({
@@ -425,6 +424,8 @@ $(document).ready(function () {
                 map.on('mouseleave', 'clusters', function () {
                   map.getCanvas().style.cursor = '';
                 });
+
+                */
                 
               
           });
@@ -433,6 +434,7 @@ $(document).ready(function () {
       };
     });
     
+ 
 
 // MAPBOX TO GOOGLE SHEET (FORM AND COORDINATES)
 
@@ -560,7 +562,6 @@ map.once('touchend', onUp);
     });
     fields.push("Latitude");
     fields.push("Longitude");
-		fields.push("Node index");
     // add form-specific values into the data
     formData.formDataNameOrder = JSON.stringify(fields);
     formData.formGoogleSheetName = form.dataset.sheet || "Sheet1"; // default sheet name
